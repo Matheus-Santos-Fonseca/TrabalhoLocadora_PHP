@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --ghostwhite: #f8f9fa;
+    --whitegray: #e9ecef;
+    --graywhite: #dee2e6;
+    --gray: #ced4da;
+    --moregray: #adb5bd;
+    --stronggray: #6c757d;
+    --grayblack: #495057;
+    --blackgray: #343a40;
+    --black: #212529;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: var(--whitegray);
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #343a40;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+td {
+    font-size: 14px;
+    color: #495057;
+}
+
+td img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+button {
+    background-color: var(--grayblack);
+    color: var(--ghostwhite);
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    transition: background 0.6s, color 0.6s;
+    background: var(--ghostwhite);
+    color: var(--grayblack);
+    transform: scale(0.98);
+}
+button:active {
+    transform: scale(0.95);
+}
+
+button .editar, .apagar {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button .editar {
+    background-color: #007bff;
+    color: white;
+}
+
+button .editar:hover {
+    background-color: #0056b3;
+}
+
+button .apagar {
+    background-color: #dc3545;
+    color: white;
+}
+
+button .apagar:hover {
+    background-color: #b02a37;
+}
+
+.botoes-navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 10px;
+}
+
+.botoes-navegacao button {
+    flex: 1;
+}
+
+#modalUpdateCarro {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 3%;
+}
+.modalcontent {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 40%;
+    padding: 3%;
+}
+#close 
+{
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}

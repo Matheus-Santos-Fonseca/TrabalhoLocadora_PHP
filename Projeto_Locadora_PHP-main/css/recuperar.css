@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --ghostwhite: #f8f9fa;
+    --whitegray: #e9ecef;
+    --graywhite: #dee2e6;
+    --gray: #ced4da;
+    --moregray: #adb5bd;
+    --stronggray: #6c757d;
+    --grayblack: #495057;
+    --blackgray: #343a40;
+    --black: #212529;
+}
+
+body {
+    background: var(--whitegray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: var(--stronggray);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.container h2 {
+    color: var(--ghostwhite);
+    margin-bottom: 15px;
+}
+
+.container input, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    background-color: var(--whitegray);
+    color: var(--grayblack);
+}
+
+.container button {
+    padding: 15px;
+    background-color: var(--grayblack);
+    color: var(--ghostwhite);
+    border: none;
+    cursor: pointer;
+}
+
+.container button:hover {
+    transition: background 0.6s, color 0.6s;
+    background: var(--moregray);
+    color: var(--grayblack);
+    transform: scale(0.98);
+}
+
+.container button:active {
+    transform: scale(0.95);
+}
+
+.token {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.token input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --ghostwhite: #f8f9fa;
+    --whitegray: #e9ecef;
+    --graywhite: #dee2e6;
+    --gray: #ced4da;
+    --moregray: #adb5bd;
+    --stronggray: #6c757d;
+    --grayblack: #495057;
+    --blackgray: #343a40;
+    --black: #212529;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: var(--whitegray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.titulo h1 {
+    color: var(--blackgray);
+    margin: 0;
+}
+.container {
+    background: var(--stronggray);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    max-width: 400px;
+}
+.container div {
+    margin-bottom: 15px;
+}
+label {
+    color: var(--ghostwhite);
+    display: block;
+    margin-bottom: 5px;
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    background-color: var(--whitegray);
+    color: var(--grayblack);
+}
+input[type="submit"], button {
+    background-color: var(--grayblack);
+    color: var(--ghostwhite);
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover, button:hover {
+    transition: background 0.6s, color 0.6s;
+    background: var(--ghostwhite);
+    color: var(--grayblack);
+    transform: scale(0.98);
+}
+input[type="submit"]:active, button:active {
+    transform: scale(0.95);
+}
+input[type="file"]::file-selector-button {
+    background-color: var(--grayblack);
+    color: var(--ghostwhite);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+input[type="file"]::file-selector-button:hover {
+    background-color: var(--blackgray);
+}
+.botoes-navegacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.botoes-navegacao button {
+    flex: 1;
+}
